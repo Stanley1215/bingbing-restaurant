@@ -1,0 +1,77 @@
+.main-login {
+    background-color: $block-color;
+    text-align: center;
+    padding-bottom: 10px;
+    h2 {
+        padding-top: 30px;
+    }
+    p {
+        font-size: $font-size-base * 1.5;
+        color: $text-color;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    
+}
+    .pure-form{
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
+        border-top: solid 3px darkorange;
+        h4 {
+            font-size: $font-size-base * 1.2;
+            font-weight: bold;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .em {
+        color: darkorange;
+        }
+    }
+    .login-wrap {
+        background: #EFE9E7;
+        width: 30%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        color: $text-color;
+    }
+    .pure-group button{
+        cursor: pointer;
+    }
+    .login-wrap .pure-group input,.login-wrap .pure-group textarea {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .login-wrap fieldset {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .login-btn {
+        padding: 1em 0;
+        border: none;
+        text-decoration: none;
+        float: none;
+        border-radius: 2px;
+        margin: 5px 0;
+        margin-bottom: 10px;
+        width: 100%;
+        a{
+            color:#fff;
+        }
+    }
+
+
+@include pad() {
+    .login-wrap {
+        width: 60%;
+    }
+}
+
+@include iphone6() {
+    .login-wrap {
+        width: 90%;
+    }
+    .login-wrap >.pure-form >.login-btn{
+        margin-bottom: 20px;
+    }
+}

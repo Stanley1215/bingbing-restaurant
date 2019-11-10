@@ -1,0 +1,158 @@
+.main-cart {
+    background-color: $block-color;
+    padding-top: 80px;
+}
+    .siderbar {
+        float: left;
+        width: 28.5%;
+        text-align: left;
+        margin: 0 auto;
+        margin-right: 1.5%;
+        h4 {
+            font-size: $font-size-base * 1.5;
+            color: $text-color;
+            padding-bottom: 20px;
+            }
+        a {
+            font-size: $font-size-base;
+            border-bottom: solid 1px $text-color;
+            padding: 10px 0;
+            color: $text-color;
+            display: block;
+                &:hover {
+                background-color: $text-color;
+                color: $link-color;
+                }
+            }
+        }
+    .cart {
+        float: right;
+        width: 68.5%;
+        margin-left: 1.5%;
+        li {
+            width: 30.333333%;
+            margin: 3% 1.5%;
+            text-align: center;
+            float: left;
+            padding-bottom: 20px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.16);
+            position: relative;
+            h4 {
+                font-size: $font-size-base * 1.5;
+                padding-top: 20px;
+                color: $text-color;
+            }
+            p {
+                line-height: 1.5;
+                color: $text-color;
+            }
+            .line {
+            width: 100px;
+            border-width: 1.2px;
+            border-color: $text-color;
+            }
+            .money {
+                font-size: $font-size-base * 1.2;
+                font-weight: bold;
+                font-style: italic;
+                padding: 10px 0 18px 0;
+            }
+            .cart-line {
+                border: solid 1px darkorange;
+                color: darkorange;
+                border-radius: 3px;
+                border-width: 2px;
+                padding: 0 20px;
+                &:hover{
+                background-color: $text-color;
+                border: solid 1px $text-color;
+                color: $link-color;
+                }
+            }
+            .heart {
+                position: absolute;
+                left: 5%;
+                top: 3%;
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+                z-index: 999;
+                }
+            }
+        }
+        .search-line {
+                border: solid 3px $text-color;
+                width: 70%;
+                background-color: $block-color;
+                float: left;
+                margin-left: 1.5%;
+            }
+            .search-icon {
+                background-color: $text-color;
+                float: left;
+                width: 24px;
+                height: 24px;
+                a {
+                    text-decoration: none;
+                    color: $link-color;
+                    display: block;
+                    line-height: 24px;
+                    text-align: center;
+                    margin-right: 3px;
+                }
+            }
+            .cart-text {
+                float: right;
+                line-height: 25px;
+                margin-right: 1.5%;
+                color: $text-color;
+            }
+
+            .fa-cart-plus{
+                color:darkorange;
+            }
+    
+
+@include pad() {
+    .siderbar {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+        .cart-text {
+            float: none;
+            text-align: right;
+            padding: 0 15px 0 0;
+        }
+    .cart {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        li {
+            width: 100%;
+            margin: 20px 0;
+        }
+        li .cart-line {
+            padding: 0 60px;
+        }
+        li .heart {
+            left: 28%;
+        }
+    }
+}
+
+@include iphone6() {
+    .cart-line {
+        padding: 0 20px;
+    }
+    .search-line {
+        width: 40%;
+    }
+    .cart-text {
+        padding: 0 10px 0 0;
+    }
+    .cart li .heart {
+        left: 5%;
+    }
+}
