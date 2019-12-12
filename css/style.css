@@ -656,6 +656,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .feature {
   background-color: #efe9e7;
   padding-bottom: 40px;
+  padding-top: 80px;
 }
 
 .feature h2 {
@@ -700,6 +701,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .main {
   background-color: #3d1101;
+  padding-top: 120px;
 }
 
 .main .img {
@@ -756,6 +758,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .avatar {
   background-color: #efe9e7;
   padding-bottom: 40px;
+  padding-top: 80px;
 }
 
 .avatar h2 {
@@ -823,13 +826,14 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .contact {
   background-color: #f6f4f3;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
+  padding-top: 40px;
 }
 
 .contact h2 {
   font-size: 2em;
   color: #3d1101;
-  padding: 50px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -1259,6 +1263,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   background-color: #3d1101;
   color: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 
 .header {
@@ -1356,14 +1361,16 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     overflow: hidden;
     transition: max-height 1.5s;
     z-index: 100;
-    margin: 60px 20px;
+    margin: 20px;
+    padding-bottom: 20px;
+  }
+  .menu li:first-child {
+    padding-top: 80px;
   }
   .menu li {
     float: none;
-    background-color: black;
     padding-bottom: 10px;
-    padding-top: 15px;
-    width: 100px;
+    padding-top: 30px;
   }
   .menu a {
     transition: all 0.5s;
@@ -1381,6 +1388,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     width: 30px;
     height: 30px;
     color: #fff;
+    z-index: 2;
   }
   .fa-bars {
     font-size: 28px;
@@ -1392,13 +1400,18 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   }
 }
 
+@media (max-width: 414px) {
+  .logo a {
+    left: 35%;
+  }
+}
+
 @media (max-width: 376px) {
   .logo a {
     left: 33%;
   }
   .menu li {
     width: 340px;
-    background-color: black;
   }
   .menu li a {
     text-align: center;

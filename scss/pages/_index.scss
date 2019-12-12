@@ -1,6 +1,7 @@
 .feature {
         background-color: $block-color;
         padding-bottom: 40px;
+        padding-top: 80px;
   h2 {
       font-size: $font-size-base *1.8;
       color: $text-color;
@@ -40,6 +41,7 @@
 
 .main {
     background-color: $chef-color;
+    padding-top: 120px;
     .img {
         float: left;
         width: 50%;
@@ -92,6 +94,7 @@
 .avatar {
     background-color: $block-color;
     padding-bottom: 40px;
+    padding-top: 80px;
     h2 {
         font-size: $font-size-base * 2;
         color: $text-color;
@@ -153,11 +156,12 @@
 
 .contact {
     background-color: #f6f4f3;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
+    padding-top: 40px;
     h2 {
         font-size: $font-size-base * 2;
         color: $text-color;
-        padding: 50px 0;
+        padding: 80px 0;
         text-align: center;
     }
 }
