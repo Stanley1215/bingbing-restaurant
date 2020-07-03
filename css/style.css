@@ -656,7 +656,6 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .feature {
   background-color: #efe9e7;
   padding-bottom: 40px;
-  padding-top: 80px;
 }
 
 .feature h2 {
@@ -701,7 +700,6 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .main {
   background-color: #3d1101;
-  padding-top: 120px;
 }
 
 .main .img {
@@ -758,7 +756,6 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .avatar {
   background-color: #efe9e7;
   padding-bottom: 40px;
-  padding-top: 80px;
 }
 
 .avatar h2 {
@@ -826,14 +823,13 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .contact {
   background-color: #f6f4f3;
-  padding-bottom: 100px;
-  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .contact h2 {
   font-size: 2em;
   color: #3d1101;
-  padding: 80px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -887,7 +883,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .main-cart {
   background-color: #efe9e7;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .siderbar {
@@ -967,7 +963,6 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .cart li .cart-line:hover {
   background-color: #3d1101;
-  border: solid 1px #3d1101;
   color: #fff;
 }
 
@@ -992,8 +987,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .search-icon {
   background-color: #3d1101;
   float: left;
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
 }
 
 .search-icon a {
@@ -1067,7 +1062,10 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 }
 
 .main-login h2 {
-  padding-top: 30px;
+  padding-top: 40px;
+}
+.main-login h2 img{
+  width: 30%;
 }
 
 .main-login p {
@@ -1102,10 +1100,6 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   color: #3d1101;
 }
 
-.pure-group button {
-  cursor: pointer;
-}
-
 .login-wrap .pure-group input, .login-wrap .pure-group textarea {
   width: 100%;
   margin: 0 auto;
@@ -1135,6 +1129,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 @media (max-width: 768px) {
   .login-wrap {
     width: 60%;
+  }
+  .main-login h2 img{
+    width: 50%;
   }
 }
 
@@ -1224,10 +1221,6 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   margin-bottom: 10px;
 }
 
-.pure-form button {
-  cursor: pointer;
-}
-
 @media (max-width: 376px) {
   .login-form-wrap {
     width: 100%;
@@ -1255,15 +1248,6 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   content: "";
   display: block;
   clear: both;
-}
-
-.nav {
-  position: fixed;
-  width: 100%;
-  background-color: #3d1101;
-  color: #fff;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  z-index: 1;
 }
 
 .header {
@@ -1310,7 +1294,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .block {
   width: 50%;
-  height: 35%;
+  height: 30%;
   position: absolute;
   left: 25%;
   top: 30%;
@@ -1342,8 +1326,12 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     height: 420px;
   }
   .block {
-    top: 50%;
-    height: 30%;
+    top: 55%;
+    height: 35%;
+    left: 50%;
+    padding: 0 30px;
+    transform: translate(-50%,-50%);
+    
   }
   .block h1 {
     font-size: 1.8em;
@@ -1352,25 +1340,35 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   .block p {
     font-size: 1em;
   }
+  .logo{
+    margin: 0;
+  }
   .logo a {
     position: absolute;
-    left: 42%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 7%;
   }
   .menu {
+    float: none;
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 1.5s;
+    transition: max-height 1s;
     z-index: 100;
-    margin: 20px;
-    padding-bottom: 20px;
+    margin: 0px 0px;
   }
-  .menu li:first-child {
-    padding-top: 80px;
+  .menu li:first-child{
+    padding-top: 50px;
+  }
+  .menu li:last-child{
+    padding-bottom: 100px;
   }
   .menu li {
     float: none;
-    padding-bottom: 10px;
-    padding-top: 30px;
+    background-color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
   }
   .menu a {
     transition: all 0.5s;
@@ -1378,17 +1376,17 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     text-align: left;
     font-size: 1.5em;
     margin-left: 0;
+    padding-left: 30px;
   }
   .showmenu {
     display: block;
     position: absolute;
     right: 3%;
     top: 4%;
-    background-color: rgba(0, 0, 0, 0.35);
+    /* background-color: rgba(0, 0, 0, 0.35); */
     width: 30px;
     height: 30px;
     color: #fff;
-    z-index: 2;
   }
   .fa-bars {
     font-size: 28px;
@@ -1396,22 +1394,14 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     margin: auto;
   }
   .menu-show .menu {
-    max-height: 400px;
-  }
-}
-
-@media (max-width: 414px) {
-  .logo a {
-    left: 35%;
+    max-height: 100%;
   }
 }
 
 @media (max-width: 376px) {
-  .logo a {
-    left: 33%;
-  }
   .menu li {
     width: 340px;
+    background-color: black;
   }
   .menu li a {
     text-align: center;
@@ -1432,9 +1422,6 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 }
 
 @media (max-width: 320px) {
-  .logo a {
-    left: 31%;
-  }
   .menu li {
     width: 280px;
   }
@@ -1471,7 +1458,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .footer .contacts h4 {
   font-size: 1.5em;
-  color: #3d1101;
+  color: 1em;
   padding: 40px 0 20px 0;
 }
 
@@ -1493,6 +1480,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 
 .footer .logo-icon img {
   display: block;
+  width: 100%;
 }
 
 .footer .fa-facebook-square, .footer .fa-twitter-square, .footer .fa-line {
@@ -1539,6 +1527,9 @@ since IE8 won't execute CSS that contains a CSS3 selector.
   }
   .footer .container {
     max-width: 90%;
+  }
+  .footer .logo-icon img{
+    width: 50%;
   }
 }
 

@@ -11,16 +11,6 @@
 }
 
 
-.nav{
-    position: fixed;
-    width: 100%;
-    background-color: #3d1101;
-    color:#fff;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    z-index: 1;
-}
-
-
 // header css
 .header {
     background-image: url('../images/header_desktop.png');
@@ -110,18 +100,13 @@
         overflow: hidden;
         transition: max-height 1.5s;
         z-index: 100;
-        margin:20px;
-        // margin-top: 80px;
-        padding-bottom: 20px;
-        li:first-child{
-padding-top: 80px;
-        }
+        margin: 60px 20px;
     li {
             float: none;
-            // background-color: black;
+            background-color: black;
             padding-bottom: 10px;
-            padding-top: 30px;
-            // width: 100px;
+            padding-top: 15px;
+            width: 100px;
         }
     a {
             transition: all 0.5s;
@@ -141,7 +126,6 @@ padding-top: 80px;
             width: 30px;
             height: 30px;
             color: $link-color;
-            z-index: 2;
         }
 
         .fa-bars {
@@ -155,19 +139,14 @@ padding-top: 80px;
         }
 }
 
-@media (max-width:414px){
-    .logo a {left: 35%;}
-}
-
 
 @include iphone6() {
     .logo a {
         left: 33%;
     }
-    
     .menu li {
         width: 340px;
-        // background-color: black;
+        background-color: black;
         a{
             text-align: center;
         }
@@ -195,7 +174,6 @@ padding-top: 80px;
     .menu li {
         width: 280px;
     }
-    
 }
 
 // footer css
@@ -223,7 +201,7 @@ padding-top: 80px;
       width: 20%;
     h4 {
         font-size: $font-size-base * 1.5;
-        color: $text-color;
+        color: $font-size-base;
         padding: 40px 0 20px 0;
     }
     ul {
